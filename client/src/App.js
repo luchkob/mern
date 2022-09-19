@@ -1,7 +1,7 @@
  
 function App(props) {
   return ( 
-    <h1 className="text-3xl font-bold underline">
+    <h1 className="bg-slate-400 font-thin hover:border-collapse">
     Hello world!
   </h1>
 
