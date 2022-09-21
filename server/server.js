@@ -2,11 +2,12 @@ const { urlencoded } = require('express')
 const express = require('express')
 var route=require('./router/route')
 var app=express()
- 
+ var cors=require('cors')
  const path = require('path');
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 app.use(route)
+app.use(cors())
  app.post('/signup',(req,res)=>{
     res.send(req.body.name)
  })
